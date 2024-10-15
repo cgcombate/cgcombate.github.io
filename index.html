@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .btn-project {
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-5">Welcome to My Projects</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button class="btn btn-primary btn-project" onclick="showProject('Project 1')">Project 1</button>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button class="btn btn-secondary btn-project" onclick="showProject('Project 2')">Project 2</button>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button class="btn btn-success btn-project" onclick="showProject('Project 3')">Project 3</button>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button class="btn btn-danger btn-project" onclick="showProject('Project 4')">Project 4</button>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button class="btn btn-warning btn-project" onclick="showProject('Project 5')">Project 5</button>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button class="btn btn-info btn-project" onclick="showProject('Project 6')">Project 6</button>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showProject(projectName) {
+            alert('You clicked on ' + projectName);
+        }
+    </script>
+</body>
+
+</html>

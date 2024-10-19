@@ -1,0 +1,12 @@
+<img src="C:\Users\caitl\Documents\Diko\MAD\images\img1.jpg">
+                <div class="content">
+                    <div class="creator">Combate</div>
+                    <div class="title"></div>
+                    <div class="project"></div>
+                    <div class="desc"></div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt consequuntur, fugit totam esse eos beatae sit, consectetur maiores nam odit. Vero dolorum iste assumenda distinctio optio culpa voluptatum iure?
+                </div>
+                <div class="buttons">
+                    <button>SEE MORE</button>   
+                    <button>FOLLOW</button>
+                </div>

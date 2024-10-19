@@ -1,0 +1,53 @@
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding-top: 50px;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-project {
+    margin: 15px 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-project:hover {
+    background-color: #555;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#notification {
+    display: none;
+    position: fixed;   /* Fix the position so it floats */
+    top: 20px;         /* Distance from the top of the screen */
+    left: 50%;         /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust horizontal centering */
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;     /* Ensure it stays on top of other elements */
+    text-align: center;
+    width: auto;       /* Adjust based on content size */
+}

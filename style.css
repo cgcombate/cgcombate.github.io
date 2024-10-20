@@ -40,6 +40,27 @@ button:hover {
     color: #eee;
     font-family: Poppins;
 }
+.social-media {
+    display: flex;                /* Use Flexbox */   
+    align-items: center;         /* Center horizontally */
+    justify-content: center;      /* Center vertically */
+    text-align: center;          /* Center text */
+    margin: 0 auto; 
+}
+
+.social-media a {
+   
+    margin-right: 5px;
+   margin-left: 8px;
+    font-size: 24px; /* Adjust size as needed */
+    color: #4aa7c4; /* Change color as needed */
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #337185; /* Change color on hover */
+}
+
 
 
 .about-section h1, .contact-section h1 {

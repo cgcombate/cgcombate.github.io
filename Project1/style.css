@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('C:\Users\caitl\Documents\Diko\MAD\cgcombate.github.io\images\bg-kyoto.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+.content-container {
+    background: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 2em;
+    max-width: 600px;
+    margin: 10% auto; /* Center the container vertically and horizontally */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}

@@ -1,10 +1,14 @@
-$(document).ready(function() {
+$(document).ready(function(){
+    $(".navbar-nav a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
 
-    $(".navbar-nav a").on('click', function (event)){
-        if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash
-        }
-    }
-}
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - 50
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });

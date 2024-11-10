@@ -94,6 +94,16 @@ header {
     border-color: #4b8fca;
 }
 
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    /* Default size */
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    /* Default size */
+}
+
 .carousel,
 .carousel-item {
     height: 100%;
@@ -152,6 +162,24 @@ h3 {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+        /* Adjust heading size for smaller screens */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+        /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+        /* Adjust padding on smaller screens */
+    }
+}
 
 footer {
     background-color: #f8f9fa;

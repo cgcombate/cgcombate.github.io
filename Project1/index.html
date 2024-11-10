@@ -15,17 +15,24 @@
     <header class="container-fluid bg-light py-3">
         <div class="d-flex justify-content-between align-items-center">
             <h1 class="logo mx-5">Kyoto</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a href="#landingCarousel" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#must-visit" class="nav-link">Must-Visit Places</a></li>
-                    <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#landingCarousel" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#must-visit" class="nav-link">Must-Visit Places</a></li>
+                        <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
+
 
     <!-- Main Section with Carousel -->
     <div id="landingCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
@@ -34,7 +41,7 @@
                 <img src="https://www.datocms-assets.com/101439/1705405366-fushimi-inari-shrine.webp?auto=format&fit=max&w=1200"
                     class="d-block w-100" alt="Image 1">
                 <div class="carousel-overlay"></div>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                     <h2>Explore the Sacred Gates of Fushimi Inari Shrine</h2>
                     <p>Walk through the iconic torii gates and immerse yourself in the mystical atmosphere of one of
                         Kyoto's most famous landmarks.</p>
@@ -44,7 +51,7 @@
                 <img src="https://www.cuddlynest.com/blog/wp-content/uploads/2022/11/places-to-see-cherry-blossoms-hirano-shrine.jpg"
                     class="d-block w-100" alt="Image 2">
                 <div class="carousel-overlay"></div>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                     <h2>Witness the Magic of Sakura Season</h2>
                     <p>Experience the breathtaking beauty of cherry blossoms in full bloom, a true spectacle of nature
                         in Kyoto.</p>
@@ -54,7 +61,7 @@
                 <img src="https://images.squarespace-cdn.com/content/v1/5fa1522044bdda192713063c/b2ff60a5-f571-48b6-8e2d-3e3fcbda95ad/Ninomaru+Palace+of+Nijo+Castle+in+Kyoto%2C+Japan"
                     class="d-block w-100" alt="Image 3">
                 <div class="carousel-overlay"></div>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                     <h2>Discover the Majestic Nijo Castle</h2>
                     <p>Step back in time and explore the historic Nijo Castle, a UNESCO World Heritage site showcasing
                         Japan's architectural splendor.</p>
@@ -64,7 +71,7 @@
                 <img src="https://japanrailandtravel.com/wp-content/uploads/2019/03/201903ci0101-e1553772440671-1080x720.png"
                     class="d-block w-100" alt="Image 4">
                 <div class="carousel-overlay"></div>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                     <h2>Marvel at the Ancient To-ji Temple</h2>
                     <p>Admire the towering pagoda of To-ji Temple, the tallest wooden structure in Japan, and a symbol
                         of Kyoto's spiritual heritage.</p>
@@ -87,9 +94,9 @@
     <section class="container mb-5" id="must-visit">
         <h2 class="text-center mb-4">Must-Visit Places</h2>
         <div class="row g-3">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card h-100">
-                    <img src="https://www.japan-guide.com/g19/740/3915_02.jpg" class="card-img-top" alt="...">
+                    <img src="https://www.japan-guide.com/g19/740/3915_02.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-img-caption text-muted text-center p-2">A giant torii gate in front of the Romon
                         Gate at the shrine's entrance</div>
                     <div class="card-body">
@@ -101,9 +108,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card h-100">
-                    <img src="https://www.japan-guide.com/g18/3908_top.jpg" class="card-img-top" alt="...">
+                    <img src="https://www.japan-guide.com/g18/3908_top.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-img-caption text-muted text-center p-2">Temple building covered in gold</div>
                     <div class="card-body">
                         <h3 class="card-title">Kinkakuji (Golden Pavilion)</h3>
@@ -114,9 +121,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card h-100">
-                    <img src="https://www.japan-guide.com/g18/740/3918_top.jpg" class="card-img-top" alt="...">
+                    <img src="https://www.japan-guide.com/g18/740/3918_top.jpg" class="card-img-top img-fluid"
+                        alt="...">
                     <div class="card-img-caption text-muted text-center p-1">Former Kyoto residence of the shogun</div>
                     <div class="card-body">
                         <h3 class="card-title">Nijo Castle (Nijojo)</h3>
@@ -127,9 +135,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="card h-100">
-                    <img src="https://www.japan-guide.com/g18/740/3912_top.jpg" class="card-img-top" alt="...">
+                    <img src="https://www.japan-guide.com/g18/740/3912_top.jpg" class="card-img-top img-fluid"
+                        alt="...">
                     <div class="card-img-caption text-muted text-center p-1">Pleasant district at the outskirts of Kyoto
                     </div>
                     <div class="card-body">
@@ -151,10 +160,10 @@
             <h2 class="text-center mb-4">Famous Kyoto Events</h2>
             <div class="row g-3">
                 <!-- Event 1: Gion Matsuri -->
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3 col-sm-12 mb-3">
                     <a href="https://www.japan-guide.com/e/e3942.html" target="_blank" class="text-decoration-none">
                         <div class="card h-100">
-                            <img src="https://www.japan-guide.com/g18/740/3942_top.jpg" class="card-img-top"
+                            <img src="https://www.japan-guide.com/g18/740/3942_top.jpg" class="card-img-top img-fluid"
                                 alt="Gion Matsuri">
                             <div class="card-img-caption text-muted text-center p-2">The famous Gion Matsuri festival in
                                 Kyoto
@@ -168,12 +177,12 @@
                     </a>
                 </div>
                 <!-- Event 2: Kiyomizu-dera Light Up -->
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3 col-sm-12 mb-3">
                     <a href="https://en.japantravel.com/kyoto/kiyomizu-dera-autumn-illumination/29524" target="_blank"
                         class="text-decoration-none">
                         <div class="card h-100">
                             <img src="https://a0.cdn.japantravel.com/photo/29524-149758/800!/kyoto-kiyomizu-dera-autumn-illumination-149758.jpg"
-                                class="card-img-top" alt="Kiyomizu-dera Light Up">
+                                class="card-img-top img-fluid" alt="Kiyomizu-dera Light Up">
                             <div class="card-img-caption text-muted text-center p-2">Kiyomizu-dera, autumn light-up
                                 event</div>
                             <div class="card-body">
@@ -186,12 +195,12 @@
                     </a>
                 </div>
                 <!-- Event 3: Kyoto Imperial Palace Sakura Viewing -->
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3 col-sm-12 mb-3">
                     <a href="https://www.japan-guide.com/blog/sakura16/160325_kyoto.html" target="_blank"
                         class="text-decoration-none">
                         <div class="card h-100">
                             <img src="https://www.japan-guide.com/blog/sakura16/g/160325_kyoto_01.jpg"
-                                class="card-img-top" alt="Kyoto Imperial Palace Sakura">
+                                class="card-img-top img-fluid" alt="Kyoto Imperial Palace Sakura">
                             <div class="card-img-caption text-muted text-center p-2">Sakura at Kyoto Imperial
                                 Palace</div>
                             <div class="card-body">
@@ -204,11 +213,11 @@
                     </a>
                 </div>
                 <!-- Event 4: To-ji Temple Flea Market -->
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3 col-sm-12 mb-3">
                     <a href="https://www.triptojapan.com/places/toji-temple-flea-market/LaMMrtA5TJCNmyNbAU-zIw"
                         target="_blank" class="text-decoration-none">
                         <div class="card h-100">
-                            <img src="https://www.japan-guide.com/g18/740/3919_04b.jpg" class="card-img-top"
+                            <img src="https://www.japan-guide.com/g18/740/3919_04b.jpg" class="card-img-top img-fluid"
                                 alt="To-ji Temple Flea Market">
                             <div class="card-img-caption text-muted text-center p-2">To-ji Temple Flea Market (Kōbō-san)
                             </div>
@@ -229,7 +238,7 @@
     <section id="about" class="container py-5">
         <h2 class="text-center mb-4">About Us</h2>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-3">
                 <img src="https://i0.wp.com/sunsetobsession.com/wp-content/uploads/2024/04/sunset-kiyomizu-dera.jpg?resize=2400%2C1586&ssl=1"
                     class="img-fluid" alt="Kyoto Image">
             </div>

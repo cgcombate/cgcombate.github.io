@@ -2,66 +2,212 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kyoto, Japan</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="C:\Users\caitl\Documents\Diko\MAD\cgcombate.github.io\Project1\style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto, Japan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-expand-lg navbark-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Kyoto</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#places">Must-Visit Places</a>
-          </li>
-        </ul>
-      </div>
+    <!-- Header -->
+    <header class="container-fluid bg-light py-3">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="logo">Kyoto</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Must-Visit Places</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">999-456-009</div>
+        </div>
+    </header>
+
+    <!-- Main Section with Carousel -->
+    <div id="landingCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.datocms-assets.com/101439/1705405366-fushimi-inari-shrine.webp?auto=format&fit=max&w=1200" class="d-block w-100"
+                    alt="Image 1">
+                    <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to my Website</h2>
+                    <p>Discover the beauty of Kyoto, Japan.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.cuddlynest.com/blog/wp-content/uploads/2022/11/places-to-see-cherry-blossoms-hirano-shrine.jpg" class="d-block w-100"
+                    alt="Image 2">
+                    <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Our Latest Projects</h2>
+                    <p>See what we've been working on recently.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/5fa1522044bdda192713063c/b2ff60a5-f571-48b6-8e2d-3e3fcbda95ad/Ninomaru+Palace+of+Nijo+Castle+in+Kyoto%2C+Japan" class="d-block w-100"
+                    alt="Image 3">
+                    <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Get in Touch</h2>
+                    <p>Contact us for more information.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://japanrailandtravel.com/wp-content/uploads/2019/03/201903ci0101-e1553772440671-1080x720.png" class="d-block w-100"
+                    alt="Image 4">
+                    <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Get in Touch</h2>
+                    <p>Contact us for more information.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#landingCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-  </nav>
 
 
-  <div class="image-container">
-    <img src="https://i.imgur.com/0VONdTE.jpeg" alt="Kyoto Background" class="background-img">
-    <div class="overlay"></div>
-  </div>
 
-  <header class="text-center text-white py-5">
-    <h1>Discover Kyoto, Japan</h1>
-    <p class="lead">A journey through Japan's ancient capital</p>
-  </header>
-
-  <div class="container" id="about">
-    <section class="my-5">
-      <h2>About Kyoto</h2>
-      <p>Explore the ancient temples, stunning landscapes, and rich history of Kyoto.</p>
+    <!-- Content Blocks as Cards -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Must-Visit Places</h2>
+        <div class="row g-3">
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://www.japan-guide.com/g19/740/3915_02.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-caption text-muted text-center p-2">A giant torii gate in front of the Romon
+                        Gate at the shrine's entrance</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Fushimi Inari Shrine</h3>
+                        <p class="card-text">Fushimi Inari Shrine (伏見稲荷大社, Fushimi Inari Taisha) is an important Shinto
+                            shrine in southern Kyoto, also famous for its numerous Torii Gates.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://www.japan-guide.com/g18/3908_top.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-caption text-muted text-center p-2">Temple building covered in gold</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Kinkakuji (Golden Pavilion)</h3>
+                        <p class="card-text">Kinkakuji (金閣寺, Golden Pavilion) is a Zen temple in northern Kyoto whose
+                            top two floors are completely covered in gold leaf.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://www.japan-guide.com/g18/740/3918_top.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-caption text-muted text-center p-1">Former Kyoto residence of the shogun</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Nijo Castle (Nijojo)</h3>
+                        <p class="card-text">Nijo Castle (二条城, Nijōjō) was built in 1603 as the Kyoto residence of
+                            Tokugawa Ieyasu, the first shogun of the Edo Period (1603-1868). </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://www.japan-guide.com/g18/740/3912_top.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-caption text-muted text-center p-1">Pleasant district at the outskirts of Kyoto
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Arashiyama and Sagano</h3>
+                        <p class="card-text">Arashiyama (嵐山) is a pleasant, touristy district in the western outskirts
+                            of Kyoto. The area has been a popular destination since the Heian Period (794-1185), when
+                            nobles would enjoy its natural setting.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
-  <div class="container" id="places">
-    <section class="my-5">
-      <h2>Must-Visit Places</h2>
-      <ul>
-        <li>Fushimi Inari Shrine</li>
-        <li>Kinkaku-ji (Golden Pavilion)</li>
-        <li>Arashiyama Bamboo Grove</li>
-        <li>Gion District</li>
-      </ul>
+
+    <!-- Kyoto Events Section -->
+     <div id="events" class="overlay">
+    <section class="container mb-5" id="events">
+        <h2 class="text-center mb-4">Famous Kyoto Events</h2>
+        <div class="row g-3">
+            <!-- Event 1: Gion Matsuri -->
+            <div class="col-md-3">
+                <div class="card h-100" style="cursor: pointer;" onclick="handleCardClick('Gion Matsuri')">
+                    <img src="https://www.japan-guide.com/g18/740/3942_top.jpg" class="card-img-top" alt="Gion Matsuri">
+                    <div class="card-img-caption text-muted text-center p-2">The famous Gion Matsuri festival in Kyoto
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Gion Matsuri</h3>
+                        <p class="card-text">The Gion Matsuri (祇園祭り) is one of Japan's largest and most famous
+                            festivals, held annually in Kyoto in July.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 2: Kiyomizu-dera Light Up -->
+            <div class="col-md-3">
+                <div class="card h-100" style="cursor: pointer;" onclick="handleCardClick('Kiyomizu-dera Light Up')">
+                    <img src="https://a0.cdn.japantravel.com/photo/29524-149758/800!/kyoto-kiyomizu-dera-autumn-illumination-149758.jpg"
+                        class="card-img-top" alt="Kiyomizu-dera Light Up">
+                    <div class="card-img-caption text-muted text-center p-2">Kiyomizu-dera, autumn light-up
+                        event</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Kiyomizu-dera Light Up</h3>
+                        <p class="card-text">The Kiyomizu-dera Light Up event takes place in autumn, where the temple
+                            and surrounding scenery are beautifully illuminated.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 3: Kyoto Imperial Palace Sakura Viewing -->
+            <div class="col-md-3">
+                <div class="card h-100" style="cursor: pointer;"
+                    onclick="handleCardClick('Kyoto Imperial Palace Sakura Viewing')">
+                    <img src="https://www.japan-guide.com/blog/sakura16/g/160325_kyoto_01.jpg" class="card-img-top"
+                        alt="Kyoto Imperial Palace Sakura">
+                    <div class="card-img-caption text-muted text-center p-2">Sakura at Kyoto Imperial
+                        Palace</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Kyoto Imperial Palace Sakura Viewing</h3>
+                        <p class="card-text">Kyoto Imperial Palace opens its gardens for cherry blossom viewing each
+                            spring, offering beautiful views of sakura flowers.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 4: To-ji Temple Flea Market -->
+            <div class="col-md-3">
+                <div class="card h-100" style="cursor: pointer;" onclick="handleCardClick('To-ji Temple Flea Market')">
+                    <img src="https://www.japan-guide.com/g18/740/3919_04b.jpg" class="card-img-top"
+                        alt="To-ji Temple Flea Market">
+                    <div class="card-img-caption text-muted text-center p-2">To-ji Temple Flea Market (Kōbō-san)</div>
+                    <div class="card-body">
+                        <h3 class="card-title">To-ji Temple Flea Market</h3>
+                        <p class="card-text">To-ji Temple's monthly flea market, called Kōbō-san, is a great place to
+                            shop for antiques and local goods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
-<script href="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-light py-3 text-center">
+        <p>&copy; 2024 Company. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -23,54 +23,74 @@ header {
     z-index: 100;
 }
 
+
 header a {
     color: #eee;
     margin-right: 40px;
+}
+
+.des {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: rgba(153, 153, 153, 0.267);
     cursor: pointer;
 }
+
 /* About and Contact Sections */
-.about-section, .contact-section {
+.about-section,
+.contact-section {
     max-width: 1140px;
     margin: auto;
     padding: 20px;
     color: #eee;
     font-family: Poppins;
 }
+
 .social-media {
-    display: flex;                /* Use Flexbox */   
-    align-items: center;         /* Center horizontally */
-    justify-content: center;      /* Center vertically */
-    text-align: center;          /* Center text */
-    margin: 0 auto; 
+    display: flex;
+    /* Use Flexbox */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    text-align: center;
+    /* Center text */
+    margin: 0 auto;
 }
 
 .social-media a {
-   
+
     margin-right: 5px;
-   margin-left: 8px;
-    font-size: 24px; /* Adjust size as needed */
-    color: #4aa7c4; /* Change color as needed */
+    margin-left: 8px;
+    font-size: 24px;
+    /* Adjust size as needed */
+    color: #4aa7c4;
+    /* Change color as needed */
     text-decoration: none;
 }
 
 .social-media a:hover {
-    color: #337185; /* Change color on hover */
+    color: #337185;
+    /* Change color on hover */
 }
 
 
 
-.about-section h1, .contact-section h1 {
+.about-section h1,
+.contact-section h1 {
     text-align: center;
     font-size: 3em;
     margin-bottom: 20px;
     color: #3b91b9;
 }
 
-.about-content, .contact-content {
+.about-content,
+.contact-content {
     text-align: center;
 }
 
@@ -96,7 +116,8 @@ button:hover {
     font-size: 1.2em;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     font-size: 1em;

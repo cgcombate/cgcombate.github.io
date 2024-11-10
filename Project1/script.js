@@ -1,7 +1,3 @@
-function handleCardClick(eventName) {
-  window.location.href = "https://example.com";
-}
-
 // JavaScript for smooth hover effects
 document.addEventListener('DOMContentLoaded', function () {
   const cards = document.querySelectorAll('#events .card');

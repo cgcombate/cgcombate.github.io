@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: #f8f9fa;
 }
@@ -18,10 +22,6 @@ header {
 .nav-link {
     color: #333;
     margin-right: 10px;
-}
-
-.nav-link.active {
-    color: #007bff;
     font-weight: bold;
 }
 
@@ -85,8 +85,13 @@ header {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #89b5e4;
+    border-color: #89b5e4;
+}
+
+.btn-primary:hover {
+    background-color: #4b8fca;
+    border-color: #4b8fca;
 }
 
 .carousel,
@@ -115,7 +120,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -127,11 +132,16 @@ header {
 
 }
 
-
-.play-button {
-    font-size: 3rem;
-    color: #fff;
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
+
 
 h2 {
     font-weight: bold;

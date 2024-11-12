@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+body, html {
     margin: 0;
+    padding: 0;
     background-color: #000;
     color: #eee;
     font-family: Poppins;
     font-size: 12px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto;
 }
 
 a {
@@ -36,6 +41,7 @@ header a {
     border-radius: 5px;
 }
 
+
 button:hover {
     background-color: rgba(153, 153, 153, 0.267);
     cursor: pointer;
@@ -53,13 +59,9 @@ button:hover {
 
 .social-media {
     display: flex;
-    /* Use Flexbox */
     align-items: center;
-    /* Center horizontally */
     justify-content: center;
-    /* Center vertically */
     text-align: center;
-    /* Center text */
     margin: 0 auto;
 }
 
@@ -68,15 +70,13 @@ button:hover {
     margin-right: 5px;
     margin-left: 8px;
     font-size: 24px;
-    /* Adjust size as needed */
     color: #4aa7c4;
-    /* Change color as needed */
     text-decoration: none;
 }
 
 .social-media a:hover {
     color: #337185;
-    /* Change color on hover */
+
 }
 
 
@@ -144,10 +144,11 @@ button:hover {
 
 /* carousel */
 .carousel {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     margin-top: -50px;
     width: 100vw;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
 }
 
@@ -184,7 +185,7 @@ button:hover {
 
 .carousel .list .item .title,
 .carousel .list .item .topic {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bold;
     line-height: 1.3em;
 }
@@ -454,11 +455,59 @@ button:hover {
 }
 
 @media screen and (max-width: 678px) {
-    .carousel .list .item .content {
-        padding-right: 0;
+    .carousel .list .item {
+        height: auto; 
     }
 
-    .carousel .list .item .content .title {
+    .carousel .list .item .content {
+        padding-right: 0;
+        top: 15%; 
+    }
+
+    .carousel .list .item .title {
+        font-size: 24px;
+        line-height: 1.2em;
+    }
+
+    .carousel .list .item .topic {
         font-size: 30px;
+    }
+
+    .carousel .list .item .des {
+        font-size: 12px;
+    }
+
+    .thumbnail {
+        bottom: 20px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .thumbnail {
+        gap: 5px;;
+    }
+    .thumbnail .item {
+        width: 140px;
+        height: 190px;
+    } 
+    .thumbnail .img {
+        width: 80px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .thumbnail {
+        align-items: center;
+    }
+    .thumbnail .item {
+        width: 130px;
+        height: 180px;
+    } 
+    .thumbnail .img {
+        width: 60px;
+        height: 40px;
     }
 }

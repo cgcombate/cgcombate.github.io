@@ -6,12 +6,12 @@ body {
     margin: 0;
 }
 
-html {
-    scroll-behavior: smooth;
+.fixed-top {
+    z-index: 1030;
 }
 
-header {
-    background-color: #f8f9fa;
+html {
+    scroll-behavior: smooth;
 }
 
 .logo {
@@ -19,11 +19,37 @@ header {
     font-size: 1.5rem;
 }
 
-.nav-link {
-    color: #333;
-    margin-right: 10px;
-    font-weight: bold;
+.navbar-expand-lg {
+    flex-direction: row;
 }
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #080808;
+    padding: 10px 15px;
+    margin-right: 10px;
+    text-transform: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #474747;
+    color: #fff;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .contact-info {
     font-size: 1.2rem;

@@ -443,7 +443,7 @@ button:hover {
 .carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .des,
 .carousel.prev .list .item:nth-child(2) .content .buttons {
-    animation: contentOut 1.5s linear 1 forwards !important;
+    animation: contentOut 1s linear 1 forwards !important;
 }
 
 @keyframes contentOut {

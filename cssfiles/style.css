@@ -485,8 +485,17 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    @keyframes outFrame {
+        to {
+            width: 140px;
+            height: 190px;
+            bottom: 50px;
+            left: 50%;
+            border-radius: 20px;
+        }
+    }
     .thumbnail {
-        gap: 5px;;
+        gap: 5px;
     }
     .thumbnail .item {
         width: 140px;
@@ -499,6 +508,15 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
+    @keyframes outFrame {
+        to {
+            width: 130px;
+            height: 180px;
+            bottom: 50px;
+            left: 50%;
+            border-radius: 20px;
+        }
+    }
     .thumbnail {
         align-items: center;
     }

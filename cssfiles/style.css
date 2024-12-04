@@ -415,6 +415,7 @@ button:hover {
     position: absolute;
     bottom: 0;
     left: 0;
+    transform-origin: center;
 }
 
 @keyframes outFrame {

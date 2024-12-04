@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: #818181;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.rover {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30vw;
+    height: auto;
+    z-index: 2;
+}
+
+.gourd {
+    position: absolute;
+    bottom: 25%;
+    right: 28%;
+    width: 10vw;
+    height: auto;
+    z-index: 2;
+    transform: rotate(20deg);
+}
+
+.gourd:hover {
+    cursor: pointer;
+}
+
+.back-text {
+    position: absolute;
+    top: 45%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    pointer-events: none;
+    z-index: 1;
+    font-size: 40vw;
+    color: rgba(150, 150, 150, 0.8);
+}
+
+.main-text1 {
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    font-size: 3vw;
+    z-index: 2;
+    color: white;
+    pointer-events: none;
+}
+
+.main-text2 {
+    position: absolute;
+    top: 40vh; 
+    left: 5vw;
+    font-size: 3vw;
+    z-index: 2;
+    color: white;
+    pointer-events: none;
+}
+
+.subtext {
+    position: absolute;
+    top: 50vh;
+    left: 5vw;
+    font-size: 1.3vw; 
+    z-index: 2;
+    color: white;
+    pointer-events: none;
+}
+
+@media (max-width: 2560px) {
+    .rover {
+        width: 30vw;
+    }
+
+    .gourd {
+        width: 10vw;
+        bottom: 23%;
+        right: 28%;
+    }
+
+    .back-text {
+        top: 45%;
+        font-size: 40vw;
+    }
+
+    .main-text1 {
+        top: 25%;
+        font-size: 3.5vw;
+    }
+
+    .main-text2 {
+        top: 35%;
+        font-size: 3.5vw;
+    }
+
+    .subtext {
+        top: 50%;
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 1440px) {
+    .rover {
+        width: 30vw;
+    }
+
+    .gourd {
+        width: 10vw;
+        bottom: 20%;
+        right: 30%;
+    }
+
+    .back-text {
+        top: 45%;
+        font-size: 40vw;
+    }
+
+    .main-text1 {
+        top: 25%;
+        font-size: 5vw;
+    }
+
+    .main-text2 {
+        top: 35%;
+        font-size: 5vw;
+    }
+
+    .subtext {
+        top: 50%;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1200px){
+    .rover {
+        width: 30vw;
+    }
+
+    .gourd {
+        width: 10vw;
+        bottom: 16%;
+        right: 29%;
+    }
+
+    .back-text {
+        top: 40%;
+        font-size: 40vw;
+    }
+
+    .main-text1 {
+        font-size: 4vw;
+        top: 25%;
+        left: 5vw;
+    }
+
+    .main-text2 {
+        font-size: 4vw;
+        top: 32%;
+        left: 5vw;
+    }
+
+    .subtext {
+        font-size: 2vw;
+        top: 45%;
+    }
+}
+@media (max-width: 1024px) {
+    .rover {
+        width: 35vw;
+    }
+
+    .gourd {
+        width: 10vw;
+        bottom: 20%;
+        right: 35%;
+    }
+
+    .back-text {
+        top: 40%;
+        font-size: 40vw;
+    }
+
+    .main-text1 {
+        font-size: 4vw;
+        top: 25%;
+        left: 5vw;
+    }
+
+    .main-text2 {
+        font-size: 4vw;
+        top: 32%;
+        left: 5vw;
+    }
+
+    .subtext {
+        font-size: 2vw;
+        top: 44%;
+    }
+}
+@media (max-width: 768px) {
+    .rover {
+        width: 40vw;
+    }
+
+    .gourd {
+        width: 15vw;
+        bottom: 15%;
+        right: 37%;
+    }
+
+    .back-text {
+        top: 40%;
+        font-size: 45vw;
+    }
+
+    .main-text1 {
+        font-size: 6vw;
+        top: 27%;
+        left: 5vw;
+    }
+
+    .main-text2 {
+        font-size: 6vw;
+        top: 33%;
+        left: 5vw;
+    }
+
+    .subtext {
+        font-size: 2.8vw;
+        top: 44%;
+    }
+}
+
+@media (max-width: 480px) {
+    .rover {
+        width: 50vw;
+    }
+
+    .gourd {
+        width: 25vw;
+        bottom: 15%;
+        right: 40%;
+    }
+
+    .back-text {
+        font-size: 60vw;
+    }
+
+    .main-text1 {
+        font-size: 6vw;
+        top: 15%;
+        left: 5vw;
+    }
+
+    .main-text2 {
+        font-size: 6vw;
+        top: 25%;
+        left: 5vw;
+    }
+
+    .subtext {
+        font-size: 4vw;
+        top: 35%;
+    }
+}
+
+@media (max-width: 425px) {
+    .rover {
+        width: 50vw;
+    }
+
+    .gourd {
+        width: 15vw;
+        bottom: 10%;
+        right: 50%;
+    }
+
+    .back-text {
+        top: 30%;
+        font-size: 45vw;
+    }
+
+    .main-text1 {
+        font-size: 7vw;
+        top: 22%;
+        left: 5vw;
+    }
+
+    .main-text2 {
+        font-size: 7vw;
+        top: 27%;
+        left: 5vw;
+    }
+
+    .subtext {
+        font-size: 3vw;
+        top: 35%;
+    }
+}
+@media (max-width: 375px) {
+    .rover {
+        width: 50vw;
+    }
+
+    .gourd {
+        width: 15vw;
+        bottom: 10%;
+        right: 50%;
+    }
+
+    .back-text {
+        top: 35%;
+        font-size: 45vw;
+    }
+
+    .main-text1 {
+        font-size: 8vw;
+        top: 27%;
+        left: 5vw;
+    }
+
+    .main-text2 {
+        font-size: 8vw;
+        top: 32%;
+        left: 5vw;
+    }
+
+    .subtext {
+        font-size: 3.5vw;
+        top: 38%;
+    }
+}
+
+@media (max-width: 320px) {
+    .rover {
+        width: 60vw;
+    }
+
+    .gourd {
+        width: 20vw;
+        bottom: 9%;
+        right: 57%;
+    }
+
+    .back-text {
+        top: 30%;
+        font-size: 45vw;
+    }
+
+    .main-text1 {
+        font-size: 10vw;
+        top: 20%;
+        left: 5vw;
+    }
+
+    .main-text2 {
+        font-size: 10vw;
+        top: 25%;
+        left: 5vw;
+    }
+
+    .subtext {
+        font-size: 3.5vw;
+        top: 32%;
+    }
+}
